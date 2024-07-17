@@ -20,13 +20,13 @@ const TrackingScreen: React.FC = () => {
     }, [location.search]);
 
     return (
-        <div className="relative bg-white shadow-lg flex flex-col items-center pt-12 h-screen w-screen sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
-            <div className={`${glow ? 'bg-black' : 'bg-onboarding-yellow'} absolute px-6 flex flex-col gap-6 items-center top-0 w-full h-[50vh]`}>
+        <div className="relative bg-white shadow-lg pt-12 h-screen w-screen sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
+            <div className={`${glow ? 'bg-black' : 'bg-onboarding-yellow'} absolute rounded-bl-[50px] rounded-br-[50px] px-6 flex flex-col gap-6 items-center top-0 w-full h-[45vh]`}>
                 <div className="absolute top-10">
                     <Clock glow={glow} setGlow={setGlow} speed={speed} />
                 </div>
             </div>
-            <div className="absolute px-6 flex flex-col gap-6 items-center justify-center bottom-0 w-full h-[65vh] rounded-tl-[50px] rounded-tr-[50px] bg-white">
+            <div className="absolute px-6 flex flex-col gap-6 items-center justify-center bottom-0 right-4 left-4 h-[65vh] rounded-tl-[50px] rounded-tr-[50px] bg-white">
                 <Quote />
                 <div className="absolute bottom-5 left-5 right-5">
                     <Slider speed={speed} setSpeed={setSpeed} />
