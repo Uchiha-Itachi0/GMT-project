@@ -1,26 +1,24 @@
+// src/App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import OnboardingPage from './pages/OnboardingPage';
+import SignInPage from "./pages/SignInPage";
+import RegisterPage from "./pages/RegisterPage";
+import TrackingPage from "./pages/TrackingPage";
+import LoginSuccessPage from "./pages/LoginSuccessPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<OnboardingPage />} />
+                <Route path="/sign-in" element={<SignInPage />} />
+                <Route path="/register" element={<RegisterPage />} />
+                <Route path="/tracking" element={<TrackingPage />} />
+                <Route path="/post-login" element={<LoginSuccessPage />} />
+            </Routes>
+        </Router>
+    );
+};
 
 export default App;

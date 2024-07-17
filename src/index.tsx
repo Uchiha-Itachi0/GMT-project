@@ -9,7 +9,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+      <div className="font-inter flex flec-col items-center justify-center">
+          <App />
+      </div>
   </React.StrictMode>
 );
 
