@@ -20,7 +20,7 @@ const TrackingScreen: React.FC = () => {
     }, [location.search]);
 
     return (
-        <div className="relative bg-white shadow-lg flex flex-col items-center pt-12 min-h-screen w-screen sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
+        <div className="relative bg-white shadow-lg flex flex-col items-center pt-12 h-screen w-screen sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
             <div className={`${glow ? 'bg-black' : 'bg-onboarding-yellow'} absolute px-6 flex flex-col gap-6 items-center top-0 w-full h-[50vh]`}>
                 <div className="absolute top-10">
                     <Clock glow={glow} setGlow={setGlow} speed={speed} />

@@ -23,7 +23,7 @@ const OnboardingContainer: React.FC<OnboardingContainerProps> = ({
                                                                  }) => {
     return (
         <div
-            className="flex flex-col justify-end items-center sm:p-12 p-6 min-h-screen w-screen sm:w-[50vw] md:w-[40vw] lg:w-[30vw] bg-cover bg-center"
+            className="flex flex-col justify-end items-center sm:p-12 p-6 h-screen w-screen sm:w-[50vw] md:w-[40vw] lg:w-[30vw] bg-cover bg-center"
             style={{ backgroundImage: `url(${backgroundImage})` }}
         >
             <div className="w-full max-w-md p-8 rounded-[50px] bg-onboarding-yellow text-white">

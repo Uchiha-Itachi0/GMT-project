@@ -39,7 +39,7 @@ const Onboarding: React.FC = () => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen">
+        <div className="flex flex-col items-center justify-center overflow-hidden h-screen">
             <AnimatePresence mode='wait'>
                 <motion.div
                     key={currentStep}
