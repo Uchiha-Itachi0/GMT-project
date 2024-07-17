@@ -21,7 +21,7 @@ const TrackingScreen: React.FC = () => {
 
     return (
         <div className="relative bg-white shadow-lg pt-12 h-screen w-screen sm:w-[50vw] md:w-[40vw] lg:w-[30vw]">
-            <div className={`${glow ? 'bg-black' : 'bg-onboarding-yellow'} absolute rounded-bl-[50px] rounded-br-[50px] px-6 flex flex-col gap-6 items-center top-0 w-full h-[45vh]`}>
+            <div className={`${glow ? 'bg-black' : 'bg-onboarding-yellow'} absolute rounded-bl-[50px] rounded-[50px] px-6 flex flex-col gap-6 items-center top-4 left-4 right-4 h-[45vh]`}>
                 <div className="absolute top-10">
                     <Clock glow={glow} setGlow={setGlow} speed={speed} />
                 </div>
