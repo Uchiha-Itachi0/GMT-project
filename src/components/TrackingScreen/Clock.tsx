@@ -40,7 +40,7 @@ const Clock: React.FC<ClockProps> = ({ speed, glow, setGlow }) => {
 
     // const clockNumbers = Array.from({ length: 12 }, (_, i) => i + 1).map((num) => {
     //     const angle = (num / 12) * 360 - 90;
-    //     const translateValue = clockRef.current ? clockRef.current.clientWidth / 2.6 : 13; // Adjust this value to center numbers dynamically
+    //     const translateValue = clockRef.current ? clockRef.current.clientWidth / 2.6 : 13;
     //     const style = {
     //         transform: `rotate(${angle}deg) translate(4vw) rotate(${-angle}deg)`,
     //     };

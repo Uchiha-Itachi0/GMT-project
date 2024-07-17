@@ -18,9 +18,7 @@ const Step1: React.FC<Step1Props> = ({ currentStep, totalSteps, onNext, onSkip }
             onNext={onNext}
             onSkip={onSkip}
             backgroundImage={backgroundImage}
-        >
-            "Step 1 Content"
-        </OnboardingContainer>
+        />
     );
 };
 

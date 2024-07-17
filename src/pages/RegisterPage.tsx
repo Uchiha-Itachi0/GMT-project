@@ -34,7 +34,6 @@ const RegisterPage: React.FC = () => {
                 await updateProfile(user, { displayName: username });
                 setSnackbar({ open: true, message: 'User registered successfully' });
                 navigate('/post-login');
-                // Additional user setup can be done here
             } catch (error: any) {
                 if(error.message.split('Firebase: ')[1].includes('missing-password')){
                     setSnackbar({ open: true, message: 'Please enter the password' });
@@ -64,7 +63,7 @@ const RegisterPage: React.FC = () => {
     const handleRegisterWithGoogle = async () => {
         try{
             const provider = new GoogleAuthProvider()
-            const result = await signInWithPopup(auth, provider)
+            await signInWithPopup(auth, provider);
             setSnackbar({ open: true, message: 'User registered successfully' });
             navigate('/post-login');
         }

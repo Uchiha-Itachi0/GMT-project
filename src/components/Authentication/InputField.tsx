@@ -1,7 +1,6 @@
-// InputField.tsx
 
 import React, { InputHTMLAttributes, useState } from 'react';
-import { FiEye, FiEyeOff } from 'react-icons/fi'; // Import Eye and EyeOff icons from react-icons/fi
+import { FiEye, FiEyeOff } from 'react-icons/fi';
 
 interface InputFieldProps extends InputHTMLAttributes<HTMLInputElement> {
     label: string;

@@ -1,5 +1,4 @@
-import React, { ReactNode } from 'react';
-import {Link} from "react-router-dom";
+import React from 'react';
 
 interface OnboardingContainerProps {
     title: string;
@@ -10,7 +9,6 @@ interface OnboardingContainerProps {
     onSkip: () => void;
     onFinishStep?: () => void;
     backgroundImage: string;
-    children: ReactNode;
 }
 
 const OnboardingContainer: React.FC<OnboardingContainerProps> = ({
@@ -22,8 +20,6 @@ const OnboardingContainer: React.FC<OnboardingContainerProps> = ({
                                                                      onSkip,
                                                                      onFinishStep,
                                                                      backgroundImage,
-                                                                     children,
-
                                                                  }) => {
     return (
         <div

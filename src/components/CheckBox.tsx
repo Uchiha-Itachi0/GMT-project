@@ -1,4 +1,3 @@
-// Checkbox.tsx
 
 import React, { InputHTMLAttributes } from 'react';
 

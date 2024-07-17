@@ -1,4 +1,3 @@
-// src/components/ShareButton.tsx
 import React, {useState} from 'react';
 import Snackbar from "../SnackBar";
 

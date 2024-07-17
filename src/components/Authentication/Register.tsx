@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import InputField from './InputField';
 import { FcGoogle } from "react-icons/fc";
 import Checkbox from "../CheckBox";

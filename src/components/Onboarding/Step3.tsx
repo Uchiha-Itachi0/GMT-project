@@ -20,9 +20,7 @@ const Step3: React.FC<Step3Props> = ({ currentStep, totalSteps, onNext, onSkip, 
             onSkip={onSkip}
             onFinishStep={onFinishStep}
             backgroundImage={backgroundImage}
-        >
-            "Step 2 Content"
-        </OnboardingContainer>
+        />
     );
 };
 
